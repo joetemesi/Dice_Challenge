@@ -1,10 +1,42 @@
 body {
-    background-color: aqua;
+    background-color: #393E46;
+    color: aliceblue;
+}
+h1 {
+  font-family: 'Caveat', cursive;
+  font-family: 'Zilla Slab', serif;
+}
+
+p{
+  font-size: 2.5rem;
+  font-family: 'Archivo Narrow', sans-serif;
+  font-family: 'Caveat', cursive;
+  font-family: 'Zilla Slab', serif;
+}
+
+a {
+  text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {
     .players {
       display: block !important;
+      align-self: center;
+      align-content: center !important;
+      justify-content: center;
+      margin-top: 0px;
+      margin:0 auto;
+      align-items: center !important;
+    }
+    .dice {
+      width: 200px;
+      height: 200px;
+      display: flex !important;
+      justify-content: center;
+      align-self: center !important;
+      align-content: center;
+      align-items: center;
+      margin: 0 auto;
     }
   }
  
