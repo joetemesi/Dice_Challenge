@@ -63,5 +63,6 @@ function diceText() {
         
     } else {
         var text = text.innerHTML = " You both tied";
+        
     }      
 }
