@@ -5,6 +5,7 @@ function diceRandom() {
     return [randomNumber1,randomNumber2];
 }
 
+
 function diceImage () {
     
     var randomNumbers = diceRandom();
@@ -40,7 +41,27 @@ function diceImage () {
          var image2 = image2.setAttribute("src", "Assets/images/dice5.png");
     } else {
          var image2 = image2.setAttribute("src", "Assets/images/dice6.png");
-    }  
+    } 
+    
+    return [randomNumber1,randomNumber2];
+    
+}
 
+function diceText() {
 
+    var text = document.querySelector("h1");
+    var randomNumberText = diceImage();
+    var player1 = randomNumberText[0];
+    var player2 = randomNumberText[1];
+    
+
+    if (player1 > player2) {
+        var text = text.innerHTML = "Congrats Player 1, You Won! ";
+         
+    } else if (player2 > player1){
+        var text = text.innerHTML= "Congrats Player 2, You Won! ";
+        
+    } else {
+        var text = text.innerHTML = " You both tied";
+    }      
 }
