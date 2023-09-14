@@ -62,7 +62,7 @@ function diceText() {
         var text = text.innerHTML= "Congrats Player 2, You Won! ";
         
     } else {
-        var text = text.innerHTML = " You both tied";
+        var text = text.innerHTML = " You both tied!";
         
     }      
 }
