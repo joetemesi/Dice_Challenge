@@ -69,3 +69,7 @@ function diceText() {
         
     }      
 }
+
+function reload() {
+     location.reload();
+}
