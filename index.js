@@ -53,6 +53,9 @@ function diceText() {
     var randomNumberText = diceImage();
     var player1 = randomNumberText[0];
     var player2 = randomNumberText[1];
+    var refreshButton = document.querySelector("#refreshbutton")
+    refreshButton.classList.remove('d-none',);
+    
     
 
     if (player1 > player2) {
