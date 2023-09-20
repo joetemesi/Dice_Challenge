@@ -1,4 +1,4 @@
-function diceRandom() {
+function diceRandom() { //Random Dice throw
 
     var randomNumber1 = (Math.floor(Math.random() * 6)) + 1;
     var randomNumber2 = (Math.floor(Math.random() * 6)) + 1;
@@ -6,7 +6,7 @@ function diceRandom() {
 }
 
 
-function diceImage () {
+function diceImage () { //Change dice image
     
     var randomNumbers = diceRandom();
     var randomNumber1 = randomNumbers[0];
@@ -15,7 +15,7 @@ function diceImage () {
     var image2 = document.querySelector(".img2");
     
     
-    if (randomNumber1 == 1 ) {
+    if (randomNumber1 == 1 ) { //conditions check to assign image
          var image1 = image1.setAttribute("src", "Assets/images/dice1.png")
     } else if (randomNumber1 == 2) {
          var image1 = image1.setAttribute("src", "Assets/images/dice2.png");
@@ -47,7 +47,7 @@ function diceImage () {
     
 }
 
-function diceText() {
+function diceText() { //Refresh button
 
     var text = document.querySelector("h1");
     var randomNumberText = diceImage();
@@ -70,6 +70,6 @@ function diceText() {
     }      
 }
 
-function reload() {
+function reload() { //webpage reload
      location.reload();
 }
